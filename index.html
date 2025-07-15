@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colegio Santa Estrella</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+    <!-- Mobile Menu Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Quiénes Somos</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#ubicacion">Ubicación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><button onclick="window.location.href='login.html'" class="btn-login">Iniciar Sesión</button></li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <h1 class="logo animate__animated animate__bounceIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/2784/2784487.png" alt="Logo Colegio" width="40">
+                Colegio Santa Estrella
+            </h1>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#inicio" class="animate__animated animate__fadeIn">Inicio</a></li>
+                    <li><a href="#nosotros" class="animate__animated animate__fadeIn">Quiénes Somos</a></li>
+                    <li><a href="#galeria" class="animate__animated animate__fadeIn">Galería</a></li>
+                    <li><a href="#ubicacion" class="animate__animated animate__fadeIn">Ubicación</a></li>
+                    <li><a href="#contacto" class="animate__animated animate__fadeIn">Contacto</a></li>
+                </ul>
+                <button onclick="window.location.href='login.html'"
+                    class="btn-login desktop animate__animated animate__pulse animate__infinite animate__slower">Iniciar
+                    Sesión</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Hero Banner -->
+        <section class="hero" id="inicio">
+            <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Educación Primaria de Calidad</h2>
+                <p class="animate__animated animate__fadeIn animate__delay-1s">Formamos niños felices, seguros y
+                    creativos para un futuro brillante.</p>
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                    alt="Niños estudiando" class="hero-img animate__animated animate__zoomIn animate__delay-1s" />
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Nuestros Valores</h2>
+                <div class="features-grid">
+                    <div class="feature animate-pop" style="animation-delay: 0.2s;">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Enseñanza Personalizada</h3>
+                        <p>Adaptamos el aprendizaje a las necesidades de cada alumno para maximizar su potencial.</p>
+                    </div>
+                    <div class="feature animate-pop" style="animation-delay: 0.4s;">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>Ambiente Seguro</h3>
+                        <p>Instalaciones modernas y seguras, con docentes capacitados en cuidado infantil.</p>
+                    </div>
+                    <div class="feature animate-pop" style="animation-delay: 0.6s;">
+                        <div class="feature-icon">💡</div>
+                        <h3>Tecnología y Creatividad</h3>
+                        <p>Promovemos el pensamiento lógico, arte y uso de tecnología de manera equilibrada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery" id="galeria">
+            <div class="container">
+                <h2 class="section-title">Nuestro Día a Día</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1549056572-75914d5d5fd4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Aula de clases">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Actividad física">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1541178735493-479c1a27ed24?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Clase de arte">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Laboratorio de ciencias">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Biblioteca escolar">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+                            alt="Actividades al aire libre">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="nosotros">
+            <div class="container">
+                <h2 class="section-title">Quiénes Somos</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Una institución con más de 20 años de experiencia</h3>
+                        <p>El Colegio Santa Estrella fue fundado en 2000 con la misión de proporcionar una educación
+                            integral que combine excelencia académica con desarrollo emocional y social.</p>
+                        <p>Nuestro equipo docente está altamente calificado y comprometido con la formación de
+                            ciudadanos responsables, creativos y felices.</p>
+                        <p>Creemos en una educación personalizada que respete los ritmos de aprendizaje de cada niño,
+                            fomentando su curiosidad natural y amor por el conocimiento.</p>
+                    </div>
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                            alt="Profesores del colegio">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section class="location" id="ubicacion">
+            <div class="container">
+                <h2 class="section-title">Dónde Encontrarnos</h2>
+                <p>Estamos ubicados en el corazón de la ciudad, con fácil acceso y amplias zonas verdes para el disfrute
+                    de nuestros estudiantes.</p>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62422.688203071675!2d-77.057704!3d-12.06709345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses!2spe!4v1621558048479!5m2!1ses!2spe"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📞 (01) 456-7890</li>
+                        <li>📧 info@santaestrella.edu</li>
+                        <li>📍 Calle Educacion 123, San Miguel. Lima</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Horarios</h4>
+                    <ul>
+                        <li>Lunes a Viernes</li>
+                        <li>7:30 am - 3:30 pm</li>
+                        <li>After School hasta 6:00 pm</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Quiénes Somos</a></li>
+                        <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#ubicacion">Ubicación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Síguenos</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Colegio Santa Estrella - Todos los derechos reservados</p>
+                <p class="developer-credit">Ing. Styp Canto Rondón</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
