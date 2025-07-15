@@ -212,7 +212,7 @@ function initLoginButton() {
         loginBtn.addEventListener('click', () => {
             const isGitHubPages = window.location.host.includes('github.io');
             const basePath = isGitHubPages ? '/' + window.location.pathname.split('/')[1] : '';
-            window.location.href = basePath + '/Login.html';
+            window.location.href = basePath + '/demo_pagina_colegio/Login.html';
         });
     }
 }
@@ -222,9 +222,9 @@ function initBackButton() {
     const backButton = document.getElementById('backButton');
     if (backButton) {
         backButton.addEventListener('click', () => {
-           
-                window.location.href = 'index.html';
-            
+
+            window.location.href = 'index.html';
+
         });
     }
 }
