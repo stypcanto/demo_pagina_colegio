@@ -1,7 +1,7 @@
 :root {
   --primary: #0b3625;
   --secondary: #4ecdc4;
-  --accent: #ffe66d;
+  --accent: #fcff59;
   --dark: #292f36;
   --light: #f7fff7;
   --fun1: #a5ffd6;
@@ -106,7 +106,7 @@ body {
 
 .btn-login {
   background-color: var(--accent);
-  color: var(--dark);
+  color: var(--primary) !important;
   border: none;
   padding: 10px 20px;
   border-radius: 30px;
@@ -118,9 +118,11 @@ body {
   font-size: 0.95rem;
 }
 
+
 .btn-login:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+
+  background-color: var(--secondary) !important;
 }
 
 /* Hero Banner */
