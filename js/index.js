@@ -252,15 +252,15 @@ function initForms() {
         }
     });
 
-    // 4. Botón de login global
-    function initLoginButton() {
-        const loginBtn = document.getElementById('loginBtn');
-        if (loginBtn) {
-            loginBtn.addEventListener('click', function () {
-                const isGitHubPages = window.location.host.includes('github.io');
-                const repoName = isGitHubPages ? window.location.pathname.split('/')[1] : '';
-                window.location.href = isGitHubPages ? `/${repoName}/login.html` : 'login.html';
-            });
-        }
+function initLoginButton() {
+    const loginBtn = document.getElementById('loginBtn');
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function () {
+            const isGitHubPages = window.location.host.includes('github.io');
+            const basePath = isGitHubPages ? '/' + window.location.pathname.split('/')[1] : '';
+            window.location.href = basePath + '/Login.html';
+        });
     }
 }
+}
+
