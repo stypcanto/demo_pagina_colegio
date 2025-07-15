@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initMobileMenu();
     initAnimations();
     initForms();
-    initLoginButton();
+    initloginButton();
     initBackButton();
 });
 
@@ -73,7 +73,7 @@ function initAnimations() {
 
 // 3. Formularios (login, registro, recuperación)
 function initForms() {
-    // Formulario Login
+    // Formulario login
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
         loginForm.addEventListener('submit', function (e) {
@@ -97,7 +97,7 @@ function initForms() {
         });
     }
 
-    // Formulario Registro
+    // Formulario registro
     const registerForm = document.getElementById('registerForm');
     if (registerForm) {
         registerForm.addEventListener('submit', function (e) {
@@ -206,13 +206,13 @@ function initForms() {
 }
 
 // 4. Botón de login (redirección)
-function initLoginButton() {
+function initloginButton() {
     const loginBtn = document.getElementById('loginBtn');
     if (loginBtn) {
         loginBtn.addEventListener('click', () => {
             const isGitHubPages = window.location.host.includes('github.io');
             const basePath = isGitHubPages ? '/' + window.location.pathname.split('/')[1] : '';
-            window.location.href = basePath + '/demo_pagina_colegio/Login.html';
+            window.location.href = basePath + '/demo_pagina_colegio/login.html';
         });
     }
 }

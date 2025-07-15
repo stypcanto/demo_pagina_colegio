@@ -1,5 +1,5 @@
 
-# Colegio Santa Estrella - Sitio Web Institucional + Login
+# Colegio Santa Estrella - Sitio Web Institucional + login
 Demo de desarrollo de una página institucional
 Trabajo desarrollado para la entrega de actividad 1 de Cibertec 
 
