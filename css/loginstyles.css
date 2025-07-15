@@ -1,0 +1,339 @@
+:root {
+    --primary: #0b3625;
+  --accent: #f6c90e;
+  --fun1: #f0f4ff;
+  --fun3: #d6e4ff;
+  --dark: #111;
+    --light: #f7fff7;
+  --error: #e74c3c;
+  --radius: 12px;
+  --font-main: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--light);
+  padding: 20px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.login-title {
+  color: var(--primary);
+  font-family: 'Fredoka One', cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1.8px solid #ddd;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.error {
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-top: 4px;
+  display: none;
+}
+
+.btn-login {
+  background-color: var(--accent);
+  color: #111;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-login:hover {
+  background-color: #e6b800;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.extra-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.link {
+  display: block;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 6px;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #1f3d73;
+  text-decoration: underline;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.back-button:hover {
+  transform: translateX(-4px);
+ 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.7rem;
+  }
+
+  .back-button {
+    font-size: 1rem;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+.extra-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.link {
+  flex: 1 1 45%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f7f9fc;
+  border-radius: 8px;
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1.5px solid transparent;
+}
+
+.link:hover {
+  background-color: #e8f0ff;
+  border-color: var(--primary);
+  color: #1c3c70;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Contenedor principal del formulario */
+.recovery-container {
+  background-color: var(--light);
+  padding: 3rem 2rem;
+  border-radius: 40px; /* GRAN RADIO REDONDEADO */
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+
+/* Título */
+.recovery-container h1 {
+  font-family: 'Fredoka One', cursive;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Descripción */
+.recovery-container p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1.8rem;
+}
+
+/* Grupo de formulario */
+.form-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input[type="email"]:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+  background-color: var(--accent);
+  color: var(--dark);
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--primary);
+  color: var(--fun1);
+}
+
+/* Mensaje de éxito */
+.success-message {
+  color: var(--success);
+  margin-top: 1rem;
+  display: none;
+  font-size: 0.95rem;
+}
+
+/* Mensaje de error */
+.error {
+  color: var(--error);
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+/* Enlaces de abajo */
+.recovery-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.recovery-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.recovery-links a:hover {
+  color: #1c3c70;
+  text-decoration: underline;
+}
+
+
+/* Tablets: Pantallas entre 481px y 768px */
+@media (max-width: 768px) {
+  .login-container,
+  .recovery-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-title,
+  .recovery-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .form-group input {
+    font-size: 0.95rem;
+  }
+
+  .btn-login,
+  button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+/* Pantallas pequeñas hasta 1024px */
+@media (max-width: 1024px) {
+  body {
+    padding: 15px;
+  }
+
+  .login-container,
+  .recovery-container {
+    margin-top: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .extra-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .link {
+    flex: 1 1 100%;
+  }
+}

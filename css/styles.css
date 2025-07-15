@@ -883,3 +883,16 @@ body {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.7);
 }
+
+
+@media (max-width: 992px) {
+  .btn-login.desktop {
+    display: none !important;
+  }
+}
+
+@media (min-width: 993px) {
+  .mobile-menu .btn-login {
+    display: none !important;
+  }
+}
