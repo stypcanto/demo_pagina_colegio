@@ -249,3 +249,17 @@ document.getElementById('recoveryForm').addEventListener('submit', function (e) 
         }, 5000);
     }
 });
+
+// Redirección al login desde el botón en la página de inicio
+document.getElementById('loginBtn').addEventListener('click', function() {
+    // Detectar si estamos en GitHub Pages
+    const isGitHubPages = window.location.host.includes('github.io');
+    
+    // Obtener el nombre del repositorio automáticamente
+    const repoName = isGitHubPages ? window.location.pathname.split('/')[1] : '';
+    
+    // Construir la ruta correcta
+    const loginPath = repoName ? `/${repoName}/login.html` : '/login.html';
+    
+    window.location.href = loginPath;
+});
