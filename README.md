@@ -3,6 +3,7 @@
 Demo de desarrollo de una página institucional
 Trabajo desarrollado para la entrega de actividad 1 de Cibertec 
 
+Página publicada con Firebase en: https://stypcanto-8730a.web.app/
 
 ## 📌 Descripción
 
@@ -77,3 +78,15 @@ Sitio web oficial del Colegio Santa Estrella, institución educativa fundada en 
 
 ````
 
+## Capturas de pantalla
+
+### Versión Web
+
+![Portada de la web](docs/portada.png)
+
+### Version móvil
+
+![Portada de la web](docs/movil.png)
+
+### Ventana de Login
+![Portada de la web](docs/login.png)
